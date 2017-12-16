@@ -5,6 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 import math
+import keras
 
 from keras.models import load_model
 
@@ -56,47 +57,50 @@ x_test  = x_test .astype('float32') / 255.
 x_train = np.reshape(x_train, (len(x_train), 28, 28, 1))
 x_test  = np.reshape(x_test,  (len(x_test),  28, 28, 1))
 
-encoder = load_model('neuro-example/autoencoder/encoder.h5')
-decoder = load_model('neuro-example/autoencoder/decoder.h5')
+encoder = load_model('neuro-example/autoencoder/c_encoder.h5')
+decoder = load_model('neuro-example/autoencoder/c_decoder.h5')
 
-n = 1
 
-bits = np.random.random_integers(0, 1, 49)
+keras.utils.print_summary(encoder)
 
-print(bits)
+n = 10
+
+# bits = np.random.random_integers(0, 1, 49)
+
+# print(bits)
 
 imgs = x_test[:n]
 encoded_imgs = encoder.predict(imgs, batch_size=n)
 
-# print encoded_imgs[0]
+print(encoded_imgs[0])
 
-for i in range(n):
-    for j in range(len(encoded_imgs[i])):
-        encoded_imgs[i][j] = get_closest_half(encoded_imgs[i][j], bits[j])
+# for i in range(n):
+#     for j in range(len(encoded_imgs[i])):
+#         encoded_imgs[i][j] = get_closest_half(encoded_imgs[i][j], bits[j])
 
-    print(get_injection(encoded_imgs[i]))
+#     print(get_injection(encoded_imgs[i]))
 
 # print encoded_imgs[0]
 
 decoded_imgs = decoder.predict(encoded_imgs, batch_size=n)
 
-double_encoded_imgs = encoder.predict(decoded_imgs, batch_size=n)
+# double_encoded_imgs = encoder.predict(decoded_imgs, batch_size=n)
 
 # print double_encoded_imgs[0]
 
-print(get_injection(double_encoded_imgs[0]))
+# print(get_injection(double_encoded_imgs[0]))
 
-count = 0
-count2 = 0
-inj1 = get_injection(encoded_imgs[0])
-inj2 = get_injection(double_encoded_imgs[0])
-for i in range(len(bits)):
-    if inj1[i] != bits[i]:
-        count += 1
-    if inj1[i] != inj2[i]:
-        count2 += 1
+# count = 0
+# count2 = 0
+# inj1 = get_injection(encoded_imgs[0])
+# inj2 = get_injection(double_encoded_imgs[0])
+# for i in range(len(bits)):
+#     if inj1[i] != bits[i]:
+#         count += 1
+#     if inj1[i] != inj2[i]:
+#         count2 += 1
 
-print(count)
-print(count2)
+# print(count)
+# print(count2)
 
-# plot_digits(imgs, decoded_imgs)
+plot_digits(imgs, decoded_imgs)
