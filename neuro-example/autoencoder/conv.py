@@ -1,5 +1,8 @@
 #! /usr/bin/env python
 # # -*- coding: utf-8 -*-
+import os
+os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
+
 
 from keras.datasets import mnist
 import numpy as np
@@ -48,12 +51,18 @@ c_encoder.summary()
 c_decoder.summary()
 c_autoencoder.summary()
 
-c_autoencoder.fit(x_train, x_train,
-                epochs=64,
-                batch_size=256,
-                shuffle=True,
-                validation_data=(x_test, x_test))
 
-c_autoencoder.save('neuro-example/autoencoder/c_autoencoder.h5')
-c_encoder.save('neuro-example/autoencoder/c_encoder.h5')
-c_decoder.save('neuro-example/autoencoder/c_decoder.h5')
+plot_model(c_autoencoder, to_file='imgs/models/autoencoder/с_autoencoder.png', show_shapes=True)
+plot_model(c_encoder, to_file='imgs/models/autoencoder/с_encoder.png', show_shapes=True)
+plot_model(c_decoder, to_file='imgs/models/autoencoder/с_decoder.png', show_shapes=True)
+
+
+# c_autoencoder.fit(x_train, x_train,
+#                 epochs=64,
+#                 batch_size=256,
+#                 shuffle=True,
+#                 validation_data=(x_test, x_test))
+
+# c_autoencoder.save('neuro-example/autoencoder/c_autoencoder.h5')
+# c_encoder.save('neuro-example/autoencoder/c_encoder.h5')
+# c_decoder.save('neuro-example/autoencoder/c_decoder.h5')

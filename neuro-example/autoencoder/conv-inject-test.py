@@ -58,4 +58,8 @@ not_injected_imgs = not_injector.predict(imgs, batch_size=n)
 
 print(not_injected_imgs)
 
+injected_imgs_2 = not_injector.predict(injected_imgs[0], batch_size=n)
+
+print(injected_imgs_2)
+
 plot_digits(imgs, injected_imgs[0])

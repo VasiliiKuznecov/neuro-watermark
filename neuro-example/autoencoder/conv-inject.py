@@ -49,10 +49,10 @@ x_train = np.reshape(x_train, (len(x_train), 28, 28, 1))
 x_test  = np.reshape(x_test,  (len(x_test),  28, 28, 1))
 
 encoder = load_model('neuro-example/autoencoder/c_encoder.h5')
-encoder_copy = load_model('neuro-example/autoencoder/c_encoder.h5')
+# encoder_copy = load_model('neuro-example/autoencoder/c_encoder.h5')
 decoder = load_model('neuro-example/autoencoder/c_decoder.h5')
 
-encoder_copy.name = 'encoder_copy'
+# encoder_copy.name = 'encoder_copy'
 
 input_img = Input(shape=(28, 28, 1))
 
@@ -63,7 +63,7 @@ injected_code = Dense(7 * 7, activation='relu', name='injector')(flatten_code)
 
 reshaped_injected_code = Reshape((7, 7, 1))(injected_code)
 image_decoded_injected = decoder(reshaped_injected_code)
-image_encoded_injected = encoder_copy(image_decoded_injected)
+image_encoded_injected = encoder(image_decoded_injected)
 flatten_code_injected = Flatten()(image_encoded_injected)
 deinjector =  Dense(2, activation='softmax', name='deinjector')
 output_bit_injected = deinjector(flatten_code_injected)
@@ -78,8 +78,8 @@ not_injector = Model(inputs=[input_img], outputs=[output_bit_no_injection], name
 not_injector.compile(optimizer='adam', loss='binary_crossentropy')
 not_injector.summary()
 
-plot_model(injector, to_file='imgs/models/autoencoder/injector.png', show_shapes=True)
-plot_model(not_injector, to_file='imgs/models/autoencoder/not_injector.png', show_shapes=True)
+plot_model(injector, to_file='imgs/models/autoencoder/injector2.png', show_shapes=True)
+plot_model(not_injector, to_file='imgs/models/autoencoder/not_injector2.png', show_shapes=True)
 
 epoch_number = 60
 batches_number = 600
@@ -98,5 +98,5 @@ for e in range(epoch_number):
 
     print('epoch ' + str(e) + ' done')
 
-injector.save('neuro-example/autoencoder/injector.h5')
-not_injector.save('neuro-example/autoencoder/not_injector.h5')
+injector.save('neuro-example/autoencoder/injector2.h5')
+not_injector.save('neuro-example/autoencoder/not_injector2.h5')
