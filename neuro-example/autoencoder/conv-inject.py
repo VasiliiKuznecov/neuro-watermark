@@ -11,6 +11,7 @@ from keras.utils import plot_model
 
 
 import math
+import random
 
 import keras
 
@@ -53,15 +54,6 @@ decoder = load_model('neuro-example/autoencoder/c_decoder.h5')
 
 encoder_copy.name = 'encoder_copy'
 
-for l in encoder.layers:
-    l.trainable = False
-
-for l in encoder_copy.layers:
-    l.trainable = False
-
-for l in decoder.layers:
-    l.trainable = False
-
 input_img = Input(shape=(28, 28, 1))
 
 image_encoded = encoder(input_img)
@@ -72,14 +64,15 @@ injected_code = Dense(7 * 7, activation='relu', name='injector')(flatten_code)
 reshaped_injected_code = Reshape((7, 7, 1))(injected_code)
 image_decoded_injected = decoder(reshaped_injected_code)
 image_encoded_injected = encoder_copy(image_decoded_injected)
+flatten_code_injected = Flatten()(image_encoded_injected)
 deinjector =  Dense(2, activation='softmax', name='deinjector')
-output_bit_injected =deinjector(image_encoded_injected)
+output_bit_injected = deinjector(flatten_code_injected)
 
 injector = Model(inputs=[input_img], outputs=[image_decoded_injected, output_bit_injected], name="injector")
 injector.compile(optimizer='adam', loss='binary_crossentropy')
 injector.summary()
 
-output_bit_no_injection =deinjector(image_encoded)
+output_bit_no_injection = deinjector(flatten_code)
 
 not_injector = Model(inputs=[input_img], outputs=[output_bit_no_injection], name="not_injector")
 not_injector.compile(optimizer='adam', loss='binary_crossentropy')
@@ -87,3 +80,23 @@ not_injector.summary()
 
 plot_model(injector, to_file='imgs/models/autoencoder/injector.png', show_shapes=True)
 plot_model(not_injector, to_file='imgs/models/autoencoder/not_injector.png', show_shapes=True)
+
+epoch_number = 60
+batches_number = 600
+batch_size = 100
+
+for e in range(epoch_number):
+    for i in range(batches_number):
+        x_batch = x_train[i * batch_size : i * batch_size + batch_size]
+        y_outputs_1 = np.repeat([[0, 1]], batch_size, axis=0)
+        y_outputs_0 = np.repeat([[1, 0]], batch_size, axis=0)
+        y_batch_injector = [x_batch, y_outputs_1]
+        y_batch_not_injector = y_outputs_0
+
+        injector.train_on_batch(x_batch, y_batch_injector)
+        not_injector.train_on_batch(x_batch, y_batch_not_injector)
+
+    print('epoch ' + str(e) + ' done')
+
+injector.save('neuro-example/autoencoder/injector.h5')
+not_injector.save('neuro-example/autoencoder/not_injector.h5')
