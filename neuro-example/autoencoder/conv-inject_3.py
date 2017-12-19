@@ -65,10 +65,17 @@ injector = load_model('neuro-example/autoencoder/c_autoencoder.h5')
 
 injected_img = injector(input_img)
 output_injected = deinjector(injected_img)
-output_not_injected = deinjector(injected_img)
+output_not_injected = deinjector(input_img)
 
 injection = Model(inputs=[input_img], outputs=[injected_img, output_injected], name='injection')
 not_injection = Model(inputs=[input_img], outputs=[output_not_injected], name='not_injection')
+
+injection.compile(optimizer='adam', loss='binary_crossentropy')
+not_injection.compile(optimizer='adam', loss='binary_crossentropy')
+
+injection.summary()
+not_injection.summary()
+
 
 plot_model(injector, to_file='imgs/models/autoencoder/injector3.png', show_shapes=True)
 plot_model(deinjector, to_file='imgs/models/autoencoder/not_injector3.png', show_shapes=True)
@@ -95,4 +102,4 @@ for e in range(epoch_number):
 injector.save('neuro-example/autoencoder/injector3.h5')
 deinjector.save('neuro-example/autoencoder/deinjector3.h5')
 injection.save('neuro-example/autoencoder/injection3.h5')
-deinjection.save('neuro-example/autoencoder/deinjection3.h5')
+not_injection.save('neuro-example/autoencoder/not_injection3.h5')
