@@ -18,23 +18,19 @@ x_test  = np.reshape(x_test,  (len(x_test),  32, 32, 3))
 from keras.layers import Input, Dense, Dropout, Flatten, Reshape
 from keras.models import Model
 
-from keras.layers import Conv2D, MaxPooling2D, UpSampling2D
+from keras.layers import Conv2D, MaxPooling2D, UpSampling2D, Conv2DTranspose
 
 def create_deep_conv_ae():
     input_img = Input(shape=(32, 32, 3))
 
-    x = Conv2D(128, (8, 8), activation='relu', padding='same')(input_img)
-    x = MaxPooling2D((2, 2), padding='same')(x)
-    x = Conv2D(32, (2, 2), activation='relu', padding='same')(x)
-    x = MaxPooling2D((2, 2), padding='same')(x)
-    encoded = Conv2D(3, (8, 8), activation='relu', padding='same')(x)
+    x = Conv2D(16, (5, 5), activation='relu', padding='same')(input_img)
+    x = Conv2D(32, (7, 7), activation='relu', padding='same')(x)
+    encoded = Conv2D(64, (3, 3), activation='relu', padding='same')(x)
 
-    input_encoded = Input(shape=(8, 8, 3))
-    x = Conv2D(32, (8, 8), activation='relu', padding='same')(input_encoded)
-    x = UpSampling2D((2, 2))(x)
-    x = Conv2D(128, (2, 2), activation='relu', padding='same')(x)
-    x = UpSampling2D((2, 2))(x)
-    decoded = Conv2D(3, (8, 8), activation='sigmoid', padding='same')(x)
+    input_encoded = Input(shape=(32, 32, 64))
+    x = Conv2DTranspose(32, (3, 3), activation='relu', padding='same')(input_encoded)
+    x = Conv2DTranspose(16, (7, 7), activation='relu', padding='same')(x)
+    decoded = Conv2DTranspose(3, (5, 5), activation='sigmoid', padding='same')(x)
 
     # Модели
     encoder = Model(input_img, encoded, name="encoder")
@@ -49,9 +45,9 @@ encoder.summary()
 decoder.summary()
 autoencoder.summary()
 
-plot_model(autoencoder, to_file='imgs/models/autoencoder/сifar_autoencoder.png', show_shapes=True)
-plot_model(encoder, to_file='imgs/models/autoencoder/сifar_encoder.png', show_shapes=True)
-plot_model(decoder, to_file='imgs/models/autoencoder/сifar_decoder.png', show_shapes=True)
+plot_model(autoencoder, to_file='imgs/models/autoencoder/сifar_autoencoder4.png', show_shapes=True)
+plot_model(encoder, to_file='imgs/models/autoencoder/сifar_encoder4.png', show_shapes=True)
+plot_model(decoder, to_file='imgs/models/autoencoder/сifar_decoder4.png', show_shapes=True)
 
 autoencoder.fit(x_train, x_train,
                 epochs=64,
@@ -59,6 +55,6 @@ autoencoder.fit(x_train, x_train,
                 shuffle=True,
                 validation_data=(x_test, x_test))
 
-autoencoder.save('neuro-example/autoencoder/cifar_autoencoder.h5')
-encoder.save('neuro-example/autoencoder/cifar_encoder.h5')
-decoder.save('neuro-example/autoencoder/cifar_decoder.h5')
+autoencoder.save('neuro-example/autoencoder/cifar_autoencoder4.h5')
+encoder.save('neuro-example/autoencoder/cifar_encoder4.h5')
+decoder.save('neuro-example/autoencoder/cifar_decoder4.h5')

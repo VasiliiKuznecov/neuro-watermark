@@ -34,19 +34,16 @@ x_test  = x_test .astype('float32') / 255.
 x_train = np.reshape(x_train, (len(x_train), 32, 32, 3))
 x_test  = np.reshape(x_test,  (len(x_test),  32, 32, 3))
 
-encoder = load_model('neuro-example/autoencoder/cifar_encoder.h5')
-decoder = load_model('neuro-example/autoencoder/cifar_decoder.h5')
+autoencoder = load_model('neuro-example/autoencoder/cifar_autoencoder4.h5')
 
-keras.utils.print_summary(encoder)
+keras.utils.print_summary(autoencoder)
+
+print(autoencoder.get_config())
 
 n = 10
 
-
 imgs = x_test[:n]
-encoded_imgs = encoder.predict(imgs, batch_size=n)
 
-print(encoded_imgs[0])
-
-decoded_imgs = decoder.predict(encoded_imgs, batch_size=n)
+decoded_imgs = autoencoder.predict(imgs, batch_size=n)
 
 plot_digits(imgs, decoded_imgs)
