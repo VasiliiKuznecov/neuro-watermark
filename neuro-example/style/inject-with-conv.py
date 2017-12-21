@@ -16,8 +16,8 @@ from keras.utils import plot_model
 
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
-x_train = x_train.astype('float32') / 255.
-x_test  = x_test .astype('float32') / 255.
+x_train = x_train.astype('float32')
+x_test  = x_test .astype('float32')
 x_train = np.reshape(x_train, (len(x_train), 32, 32, 3))
 x_test  = np.reshape(x_test,  (len(x_test),  32, 32, 3))
 
@@ -27,9 +27,8 @@ img_ncols = 32
 iterations = 20
 
 # Utility function to open, resize and format pictures into appropriate tensors
-def preprocess_image(image_path):
-    img = load_img(image_path, target_size=(img_nrows, img_ncols))
-    img = img_to_array(img)
+def preprocess_image():
+    img = x_test[0]
     img = np.expand_dims(img, axis=0)
     img = vgg16.preprocess_input(img)
     return img
@@ -49,7 +48,7 @@ def deprocess_image(x):
     return x
 
 # Get tensor representations of our images
-base_image = K.variable(preprocess_image(content_image_path))
+base_image = K.variable(preprocess_image())
 
 
 # TODO: Start the combination image as the original image?
@@ -59,56 +58,28 @@ if K.image_dim_ordering() == 'th':
 else:
     combination_image = K.placeholder((1, img_nrows, img_ncols, 3))
 
-
-# Compute the neural style loss
-# First we need to define 4 util functions
-
-# The gram matrix of an image tensor (feature-wise outer product)
-def gram_matrix(x):
-    assert K.ndim(x) == 3
-    if K.image_dim_ordering() == 'th':
-        features = K.batch_flatten(x)
-    else:
-        features = K.batch_flatten(K.permute_dimensions(x, (2, 0, 1)))
-    gram = K.dot(features, K.transpose(features))
-    return gram
-
-# The "style loss" is designed to maintain
-# the style of the reference image in the generated image.
-# It is based on the gram matrices (which capture style) of
-# feature maps from the style reference image
-# and from the generated image
-def style_loss(style, combination):
-    assert K.ndim(style) == 3
-    assert K.ndim(combination) == 3
-    S = gram_matrix(style)
-    C = gram_matrix(combination)
-    channels = 3
-    size = img_nrows * img_ncols
-    return K.sum(K.square(S - C)) / (4. * (channels ** 2) * (size ** 2))
-
-# An auxiliary loss function
-# designed to maintain the "content" of the
-# base image in the generated image
 def content_loss(base, combination):
     return K.sum(K.square(combination - base))
 
+def injector_loss(combination):
+    return 0
+
 # The 3rd loss function, total variation loss,
 # designed to keep the generated image locally coherent
-def total_variation_loss(x):
-    assert K.ndim(x) == 4
-    if K.image_dim_ordering() == 'th':
-        a = K.square(x[:, :, :img_nrows-1, :img_ncols-1] - x[:, :, 1:, :img_ncols-1])
-        b = K.square(x[:, :, :img_nrows-1, :img_ncols-1] - x[:, :, :img_nrows-1, 1:])
-    else:
-        a = K.square(x[:, :img_nrows-1, :img_ncols-1, :] - x[:, 1:, :img_ncols-1, :])
-        b = K.square(x[:, :img_nrows-1, :img_ncols-1, :] - x[:, :img_nrows-1, 1:, :])
-    return K.sum(K.pow(a + b, 1.25))
+# def total_variation_loss(x):
+#     assert K.ndim(x) == 4
+#     if K.image_dim_ordering() == 'th':
+#         a = K.square(x[:, :, :img_nrows-1, :img_ncols-1] - x[:, :, 1:, :img_ncols-1])
+#         b = K.square(x[:, :, :img_nrows-1, :img_ncols-1] - x[:, :, :img_nrows-1, 1:])
+#     else:
+#         a = K.square(x[:, :img_nrows-1, :img_ncols-1, :] - x[:, 1:, :img_ncols-1, :])
+#         b = K.square(x[:, :img_nrows-1, :img_ncols-1, :] - x[:, :img_nrows-1, 1:, :])
+#     return K.sum(K.pow(a + b, 1.25))
 
 # Combine these loss functions into a single scalar
 loss = K.variable(0.)
-loss += content_weight * content_loss(base_image,
-                                      combination_image)
+loss += 0.5 * content_loss(base_image, combination_image)
+loss += 0.5 * injector_loss(combination_image)
 # loss += total_variation_weight * total_variation_loss(combination_image)
 
 # Get the gradients of the generated image wrt the loss
@@ -177,7 +148,7 @@ for i in range(iterations):
     print('Current loss value:', min_val)
     # save current generated image
     img = deprocess_image(x.copy())
-    fname = 'neuro-example/style/' + i + '.png'
+    fname = 'neuro-example/style/' + str(i) + '.png'
     imsave(fname, img)
     end_time = time.time()
     print('Image saved as', fname)
