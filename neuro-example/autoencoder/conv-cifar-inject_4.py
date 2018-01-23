@@ -1,14 +1,16 @@
+# -*- coding: utf-8 -*-
 # from IPython import get_ipython
 # get_ipython().run_line_magic('matplotlib', 'inline')
 
 import os
 os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
 
+import time
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 from keras.utils import plot_model
-
 
 import math
 import random
@@ -20,11 +22,16 @@ from keras.models import load_model
 from keras.layers import Input, Dense, Flatten, Reshape
 from keras.models import Model
 
-from keras.layers import Conv2D, MaxPooling2D, UpSampling2D
+from keras.layers import Conv2D, MaxPooling2D, UpSampling2D, Conv2DTranspose
 
 
 from keras.datasets import cifar10
 import numpy as np
+
+from keras import backend as K
+
+def sum_squared_error(y_true, y_pred):
+    return K.sum(K.square(y_pred - y_true), axis=-1)
 
 def plot_digits(*args):
     args = [x.squeeze() for x in args]
@@ -44,14 +51,12 @@ def plot_digits(*args):
 def create_deep_conv_ae():
     input_img = Input(shape=(32, 32, 3))
 
-    x = Conv2D(16, (5, 5), activation='relu', padding='same')(input_img)
-    x = Conv2D(32, (7, 7), activation='relu', padding='same')(x)
-    encoded = Conv2D(64, (3, 3), activation='relu', padding='same')(x)
+    x = Conv2D(16, (3, 3), activation='relu', padding='same')(input_img)
+    encoded = Conv2D(32, (3, 3), activation='relu', padding='same')(x)
 
-    input_encoded = Input(shape=(32, 32, 64))
-    x = Conv2DTranspose(32, (3, 3), activation='relu', padding='same')(input_encoded)
-    x = Conv2DTranspose(16, (7, 7), activation='relu', padding='same')(x)
-    decoded = Conv2DTranspose(3, (5, 5), activation='sigmoid', padding='same')(x)
+    input_encoded = Input(shape=(32, 32, 32))
+    x = Conv2DTranspose(16, (3, 3), activation='relu', padding='same')(input_encoded)
+    decoded = Conv2DTranspose(3, (3, 3), activation='sigmoid', padding='same')(x)
 
     # Модели
     encoder = Model(input_img, encoded, name="encoder")
@@ -71,9 +76,8 @@ x_test  = np.reshape(x_test,  (len(x_test),  32, 32, 3))
 
 input_img = Input(shape=(32, 32, 3))
 
-x = Conv2D(16, (5, 5), activation='relu', padding='same')(input_img)
-x = Conv2D(32, (7, 7), activation='relu', padding='same')(x)
-x = Conv2D(64, (3, 3), activation='relu', padding='same')(x)
+x = Conv2D(16, (3, 3), activation='relu', padding='same')(input_img)
+x = Conv2D(32, (3, 3), activation='relu', padding='same')(x)
 x = Flatten()(x)
 deinjected = Dense(2, activation='softmax')(x)
 
@@ -88,7 +92,7 @@ output_not_injected = deinjector(input_img)
 injection = Model(inputs=[input_img], outputs=[injected_img, output_injected], name='injection')
 not_injection = Model(inputs=[input_img], outputs=[output_not_injected], name='not_injection')
 
-injection.compile(optimizer='adam', loss='binary_crossentropy')
+injection.compile(optimizer='adam', loss=[sum_squared_error, 'binary_crossentropy'])
 not_injection.compile(optimizer='adam', loss='binary_crossentropy')
 
 injection.summary()
@@ -125,8 +129,8 @@ for e in range(epoch_number):
     print(loss_injector)
     print('loss not_inj: ')
     print(loss_not_injector)
+    injector.save('neuro-example/autoencoder/cifar-4/cifar_injector4-' + str(e) + '.h5')
+    deinjector.save('neuro-example/autoencoder/cifar-4/cifar_deinjector4-' + str(e) + '.h5')
+    injection.save('neuro-example/autoencoder/cifar-4/cifar_injection4-' + str(e) + '.h5')
+    not_injection.save('neuro-example/autoencoder/cifar-4/cifar_not_injection4-' + str(e) + '.h5')
 
-injector.save('neuro-example/autoencoder/cifar_injector4.h5')
-deinjector.save('neuro-example/autoencoder/cifar_deinjector4.h5')
-injection.save('neuro-example/autoencoder/cifar_injection4.h5')
-not_injection.save('neuro-example/autoencoder/cifar_not_injection4.h5')
