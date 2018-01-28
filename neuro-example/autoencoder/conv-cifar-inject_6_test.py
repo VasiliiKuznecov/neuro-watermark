@@ -56,10 +56,10 @@ x_test  = x_test .astype('float32') / 255.
 x_train = np.reshape(x_train, (len(x_train), 32, 32, 3))
 x_test  = np.reshape(x_test,  (len(x_test),  32, 32, 3))
 
-injector = load_model('neuro-example/autoencoder/cifar-5/cifar_injector5-0.h5')
-deinjector = load_model('neuro-example/autoencoder/cifar-5/cifar_deinjector5-0.h5')
-injection = load_model('neuro-example/autoencoder/cifar-5/cifar_injection5-0.h5')
-not_injection = load_model('neuro-example/autoencoder/cifar-5/cifar_not_injection5-0.h5')
+injector = load_model('neuro-example/autoencoder/cifar-5/cifar_injector6-0.h5')
+deinjector = load_model('neuro-example/autoencoder/cifar-5/cifar_deinjector6-0.h5')
+injection = load_model('neuro-example/autoencoder/cifar-5/cifar_injection6-0.h5')
+not_injection = load_model('neuro-example/autoencoder/cifar-5/cifar_not_injection6-0.h5')
 
 n = 10
 
