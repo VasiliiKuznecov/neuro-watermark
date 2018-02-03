@@ -1,0 +1,1080 @@
+epoch 0 done
+loss inj: 
+[0.021229438, 0.021229321, 1.6808514e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 1 done
+loss inj: 
+[0.018663192, 0.018663108, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 2 done
+loss inj: 
+[0.016474359, 0.016474275, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 3 done
+loss inj: 
+[0.014559255, 0.014559171, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 4 done
+loss inj: 
+[0.012852942, 0.012852858, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 5 done
+loss inj: 
+[0.011423225, 0.011423141, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 6 done
+loss inj: 
+[0.010248042, 0.010247958, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 7 done
+loss inj: 
+[0.0092081893, 0.0092081055, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 8 done
+loss inj: 
+[0.0083224233, 0.0083223395, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 9 done
+loss inj: 
+[0.0075430116, 0.0075429282, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 10 done
+loss inj: 
+[0.0068618669, 0.0068617836, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 11 done
+loss inj: 
+[0.0062639024, 0.0062638191, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 12 done
+loss inj: 
+[0.0057792086, 0.0057791253, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 13 done
+loss inj: 
+[0.0053911619, 0.0053910785, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 14 done
+loss inj: 
+[0.0050591235, 0.0050590402, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 15 done
+loss inj: 
+[0.0046174815, 0.0046173981, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 16 done
+loss inj: 
+[0.004312335, 0.0043122517, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 17 done
+loss inj: 
+[0.0040432899, 0.0040432066, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 18 done
+loss inj: 
+[0.0038038893, 0.0038038059, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 19 done
+loss inj: 
+[0.0035935212, 0.0035934378, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 20 done
+loss inj: 
+[0.0034072113, 0.0034071279, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 21 done
+loss inj: 
+[0.0032422971, 0.0032422137, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 22 done
+loss inj: 
+[0.0030955854, 0.003095502, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 23 done
+loss inj: 
+[0.0029655141, 0.0029654307, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 24 done
+loss inj: 
+[0.0028510464, 0.002850963, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 25 done
+loss inj: 
+[0.0027510549, 0.0027509716, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 26 done
+loss inj: 
+[0.0026628808, 0.0026627975, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 27 done
+loss inj: 
+[0.0025838786, 0.0025837952, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 28 done
+loss inj: 
+[0.0025121213, 0.002512038, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 29 done
+loss inj: 
+[0.0024457988, 0.0024457155, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 30 done
+loss inj: 
+[0.0023839094, 0.0023838261, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 31 done
+loss inj: 
+[0.0023264382, 0.0023263549, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 32 done
+loss inj: 
+[0.0022734068, 0.0022733235, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 33 done
+loss inj: 
+[0.002224362, 0.0022242786, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 34 done
+loss inj: 
+[0.0021782774, 0.002178194, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 35 done
+loss inj: 
+[0.0021350193, 0.0021349359, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 36 done
+loss inj: 
+[0.0020950362, 0.0020949529, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 37 done
+loss inj: 
+[0.0020579442, 0.0020578608, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 38 done
+loss inj: 
+[0.0020232643, 0.0020231809, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 39 done
+loss inj: 
+[0.0019906913, 0.0019906079, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 40 done
+loss inj: 
+[0.0019601309, 0.0019600475, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 41 done
+loss inj: 
+[0.0019312567, 0.0019311733, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 42 done
+loss inj: 
+[0.0019039448, 0.0019038613, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 43 done
+loss inj: 
+[0.0018780351, 0.0018779517, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 44 done
+loss inj: 
+[0.0018533362, 0.0018532528, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 45 done
+loss inj: 
+[0.0018297568, 0.0018296733, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 46 done
+loss inj: 
+[0.0018071943, 0.0018071108, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 47 done
+loss inj: 
+[0.0017855846, 0.0017855011, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 48 done
+loss inj: 
+[0.0017647898, 0.0017647063, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 49 done
+loss inj: 
+[0.0017447702, 0.0017446867, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 50 done
+loss inj: 
+[0.0017254374, 0.0017253539, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 51 done
+loss inj: 
+[0.0017067284, 0.0017066449, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 52 done
+loss inj: 
+[0.0016886214, 0.0016885379, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 53 done
+loss inj: 
+[0.0016710561, 0.0016709727, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 54 done
+loss inj: 
+[0.0016540994, 0.001654016, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 55 done
+loss inj: 
+[0.0016376313, 0.0016375479, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 56 done
+loss inj: 
+[0.0016216077, 0.0016215242, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 57 done
+loss inj: 
+[0.0016060389, 0.0016059554, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 58 done
+loss inj: 
+[0.0015909281, 0.0015908446, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 59 done
+loss inj: 
+[0.0015762012, 0.0015761177, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 60 done
+loss inj: 
+[0.0015618736, 0.0015617901, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 61 done
+loss inj: 
+[0.0015479519, 0.0015478685, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 62 done
+loss inj: 
+[0.0015344202, 0.0015343367, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 63 done
+loss inj: 
+[0.0015213062, 0.0015212228, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 64 done
+loss inj: 
+[0.0015086121, 0.0015085286, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 65 done
+loss inj: 
+[0.001496308, 0.0014962245, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 66 done
+loss inj: 
+[0.0014843493, 0.0014842658, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 67 done
+loss inj: 
+[0.0014727518, 0.0014726684, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 68 done
+loss inj: 
+[0.0014615111, 0.0014614277, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 69 done
+loss inj: 
+[0.0014506077, 0.0014505242, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 70 done
+loss inj: 
+[0.0014400318, 0.0014399483, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 71 done
+loss inj: 
+[0.001429757, 0.0014296735, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 72 done
+loss inj: 
+[0.0014197991, 0.0014197156, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 73 done
+loss inj: 
+[0.0014101499, 0.0014100664, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 74 done
+loss inj: 
+[0.0014007991, 0.0014007157, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 75 done
+loss inj: 
+[0.0013917374, 0.0013916539, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 76 done
+loss inj: 
+[0.0013829423, 0.0013828588, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 77 done
+loss inj: 
+[0.0013744055, 0.001374322, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 78 done
+loss inj: 
+[0.0013661489, 0.0013660655, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 79 done
+loss inj: 
+[0.0013581229, 0.0013580394, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 80 done
+loss inj: 
+[0.0013503361, 0.0013502527, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 81 done
+loss inj: 
+[0.0013427904, 0.001342707, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 82 done
+loss inj: 
+[0.001335457, 0.0013353735, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 83 done
+loss inj: 
+[0.0013283482, 0.0013282647, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 84 done
+loss inj: 
+[0.0013214486, 0.0013213651, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 85 done
+loss inj: 
+[0.0013147573, 0.0013146738, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 86 done
+loss inj: 
+[0.0013083025, 0.001308219, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 87 done
+loss inj: 
+[0.0013020377, 0.0013019543, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 88 done
+loss inj: 
+[0.0012959478, 0.0012958643, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 89 done
+loss inj: 
+[0.0012900465, 0.001289963, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 90 done
+loss inj: 
+[0.0012842979, 0.0012842144, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 91 done
+loss inj: 
+[0.0012787184, 0.0012786349, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 92 done
+loss inj: 
+[0.0012732806, 0.0012731971, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 93 done
+loss inj: 
+[0.0012680019, 0.0012679184, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 94 done
+loss inj: 
+[0.0012628668, 0.0012627833, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 95 done
+loss inj: 
+[0.0012578764, 0.0012577929, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 96 done
+loss inj: 
+[0.001253004, 0.0012529205, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 97 done
+loss inj: 
+[0.0012482769, 0.0012481934, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 98 done
+loss inj: 
+[0.0012436914, 0.001243608, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 99 done
+loss inj: 
+[0.0012392005, 0.001239117, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 100 done
+loss inj: 
+[0.0012348135, 0.00123473, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 101 done
+loss inj: 
+[0.0012305436, 0.0012304601, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 102 done
+loss inj: 
+[0.0012263322, 0.0012262487, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 103 done
+loss inj: 
+[0.0012222131, 0.0012221297, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 104 done
+loss inj: 
+[0.0012182005, 0.0012181171, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 105 done
+loss inj: 
+[0.0012143104, 0.0012142269, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 106 done
+loss inj: 
+[0.0012104869, 0.0012104034, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 107 done
+loss inj: 
+[0.0012067504, 0.0012066669, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 108 done
+loss inj: 
+[0.0012030847, 0.0012030012, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 109 done
+loss inj: 
+[0.0011995031, 0.0011994196, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 110 done
+loss inj: 
+[0.0011960124, 0.0011959289, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 111 done
+loss inj: 
+[0.0011925627, 0.0011924793, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 112 done
+loss inj: 
+[0.0011892008, 0.0011891173, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 113 done
+loss inj: 
+[0.0011859045, 0.001185821, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 114 done
+loss inj: 
+[0.0011826785, 0.001182595, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 115 done
+loss inj: 
+[0.0011795055, 0.001179422, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 116 done
+loss inj: 
+[0.0011763942, 0.0011763107, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 117 done
+loss inj: 
+[0.0011733313, 0.0011732478, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 118 done
+loss inj: 
+[0.0011703309, 0.0011702474, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 119 done
+loss inj: 
+[0.0011673691, 0.0011672856, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 120 done
+loss inj: 
+[0.0011644941, 0.0011644106, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 121 done
+loss inj: 
+[0.0011616619, 0.0011615785, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 122 done
+loss inj: 
+[0.0011588767, 0.0011587932, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 123 done
+loss inj: 
+[0.0011561535, 0.00115607, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 124 done
+loss inj: 
+[0.0011534799, 0.0011533964, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 125 done
+loss inj: 
+[0.0011508577, 0.0011507742, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 126 done
+loss inj: 
+[0.0011482722, 0.0011481887, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 127 done
+loss inj: 
+[0.0011457367, 0.0011456532, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 128 done
+loss inj: 
+[0.0011432546, 0.0011431711, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 129 done
+loss inj: 
+[0.0011408048, 0.0011407214, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 130 done
+loss inj: 
+[0.001138398, 0.0011383145, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 131 done
+loss inj: 
+[0.0011360428, 0.0011359593, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 132 done
+loss inj: 
+[0.0011337193, 0.0011336359, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 133 done
+loss inj: 
+[0.0011314271, 0.0011313437, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 134 done
+loss inj: 
+[0.0011291782, 0.0011290947, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 135 done
+loss inj: 
+[0.0011269663, 0.0011268829, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 136 done
+loss inj: 
+[0.0011247805, 0.001124697, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 137 done
+loss inj: 
+[0.0011226336, 0.0011225501, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 138 done
+loss inj: 
+[0.0011205248, 0.0011204414, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 139 done
+loss inj: 
+[0.0011184437, 0.0011183602, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 140 done
+loss inj: 
+[0.0011163986, 0.0011163151, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 141 done
+loss inj: 
+[0.0011143856, 0.0011143021, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 142 done
+loss inj: 
+[0.0011123989, 0.0011123155, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 143 done
+loss inj: 
+[0.0011104428, 0.0011103593, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 144 done
+loss inj: 
+[0.0011085196, 0.0011084361, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 145 done
+loss inj: 
+[0.0011066311, 0.0011065477, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 146 done
+loss inj: 
+[0.0011047655, 0.001104682, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 147 done
+loss inj: 
+[0.0011029287, 0.0011028452, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 148 done
+loss inj: 
+[0.0011011198, 0.0011010363, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 149 done
+loss inj: 
+[0.0010993393, 0.0010992559, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 150 done
+loss inj: 
+[0.0010975775, 0.001097494, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 151 done
+loss inj: 
+[0.0010958456, 0.0010957621, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 152 done
+loss inj: 
+[0.0010941431, 0.0010940597, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 153 done
+loss inj: 
+[0.0010924631, 0.0010923797, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 154 done
+loss inj: 
+[0.0010908009, 0.0010907174, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 155 done
+loss inj: 
+[0.0010891616, 0.0010890781, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 156 done
+loss inj: 
+[0.0010875477, 0.0010874643, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 157 done
+loss inj: 
+[0.00108596, 0.0010858765, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 158 done
+loss inj: 
+[0.001084393, 0.0010843095, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 159 done
+loss inj: 
+[0.0010828458, 0.0010827624, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 160 done
+loss inj: 
+[0.0010813213, 0.0010812378, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 161 done
+loss inj: 
+[0.0010798172, 0.0010797337, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 162 done
+loss inj: 
+[0.0010783308, 0.0010782473, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 163 done
+loss inj: 
+[0.0010768644, 0.001076781, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 164 done
+loss inj: 
+[0.0010754174, 0.0010753339, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 165 done
+loss inj: 
+[0.001073989, 0.0010739055, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 166 done
+loss inj: 
+[0.0010725746, 0.0010724912, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 167 done
+loss inj: 
+[0.0010711815, 0.001071098, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 168 done
+loss inj: 
+[0.001069802, 0.0010697185, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 169 done
+loss inj: 
+[0.0010684408, 0.0010683574, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 170 done
+loss inj: 
+[0.0010670888, 0.0010670053, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 171 done
+loss inj: 
+[0.0010657604, 0.0010656769, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 172 done
+loss inj: 
+[0.0010644468, 0.0010643633, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 173 done
+loss inj: 
+[0.001063144, 0.0010630605, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 174 done
+loss inj: 
+[0.0010618612, 0.0010617777, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 175 done
+loss inj: 
+[0.0010605875, 0.001060504, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 176 done
+loss inj: 
+[0.0010593316, 0.0010592481, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 177 done
+loss inj: 
+[0.0010580919, 0.0010580084, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 178 done
+loss inj: 
+[0.0010568674, 0.0010567839, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+
+epoch 179 done
+loss inj: 
+[0.0010556545, 0.001055571, 1.1920929e-07]
+loss not_inj: 
+8.34465e-08
+

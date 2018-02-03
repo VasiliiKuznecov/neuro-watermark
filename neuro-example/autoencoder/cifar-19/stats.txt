@@ -1,0 +1,360 @@
+epoch 0 done
+loss inj: 
+[0.27275738, 0.24043883, 0.04616937]
+loss not_inj: 
+0.134231
+
+epoch 1 done
+loss inj: 
+[0.17873952, 0.16069806, 0.025773516]
+loss not_inj: 
+0.070527
+
+epoch 2 done
+loss inj: 
+[0.12058749, 0.10852104, 0.017237794]
+loss not_inj: 
+0.0883006
+
+epoch 3 done
+loss inj: 
+[0.097391732, 0.088270277, 0.013030649]
+loss not_inj: 
+0.0927804
+
+epoch 4 done
+loss inj: 
+[0.086462043, 0.078228019, 0.011762889]
+loss not_inj: 
+0.09894
+
+epoch 5 done
+loss inj: 
+[0.080707744, 0.073058933, 0.010926874]
+loss not_inj: 
+0.106465
+
+epoch 6 done
+loss inj: 
+[0.077173322, 0.069572613, 0.010858159]
+loss not_inj: 
+0.111977
+
+epoch 7 done
+loss inj: 
+[0.075257301, 0.066738203, 0.012170138]
+loss not_inj: 
+0.116405
+
+epoch 8 done
+loss inj: 
+[0.075682946, 0.065275528, 0.014867738]
+loss not_inj: 
+0.120222
+
+epoch 9 done
+loss inj: 
+[0.075256206, 0.063639894, 0.016594728]
+loss not_inj: 
+0.125689
+
+epoch 10 done
+loss inj: 
+[0.07505203, 0.061945967, 0.018722944]
+loss not_inj: 
+0.132332
+
+epoch 11 done
+loss inj: 
+[0.076151237, 0.060368948, 0.022546133]
+loss not_inj: 
+0.137888
+
+epoch 12 done
+loss inj: 
+[0.078811631, 0.058997307, 0.028306181]
+loss not_inj: 
+0.14199
+
+epoch 13 done
+loss inj: 
+[0.081848778, 0.057692736, 0.034508631]
+loss not_inj: 
+0.143593
+
+epoch 14 done
+loss inj: 
+[0.08679609, 0.057080667, 0.042450603]
+loss not_inj: 
+0.142944
+
+epoch 15 done
+loss inj: 
+[0.093128532, 0.057085827, 0.051489573]
+loss not_inj: 
+0.141937
+
+epoch 16 done
+loss inj: 
+[0.10137913, 0.057619922, 0.062513143]
+loss not_inj: 
+0.141694
+
+epoch 17 done
+loss inj: 
+[0.10979611, 0.057918891, 0.074110322]
+loss not_inj: 
+0.143335
+
+epoch 18 done
+loss inj: 
+[0.11697184, 0.05810599, 0.08409407]
+loss not_inj: 
+0.142481
+
+epoch 19 done
+loss inj: 
+[0.12274552, 0.058196671, 0.09221264]
+loss not_inj: 
+0.139361
+
+epoch 20 done
+loss inj: 
+[0.12790817, 0.058278259, 0.099471308]
+loss not_inj: 
+0.135526
+
+epoch 21 done
+loss inj: 
+[0.13245744, 0.058360323, 0.10585302]
+loss not_inj: 
+0.130875
+
+epoch 22 done
+loss inj: 
+[0.13623574, 0.058481142, 0.11107799]
+loss not_inj: 
+0.125346
+
+epoch 23 done
+loss inj: 
+[0.13922165, 0.058614828, 0.11515261]
+loss not_inj: 
+0.11924
+
+epoch 24 done
+loss inj: 
+[0.14160892, 0.058729153, 0.11839967]
+loss not_inj: 
+0.112744
+
+epoch 25 done
+loss inj: 
+[0.14357409, 0.05880199, 0.121103]
+loss not_inj: 
+0.106333
+
+epoch 26 done
+loss inj: 
+[0.14498971, 0.058768485, 0.12317318]
+loss not_inj: 
+0.100104
+
+epoch 27 done
+loss inj: 
+[0.14667067, 0.058636378, 0.12576327]
+loss not_inj: 
+0.0945021
+
+epoch 28 done
+loss inj: 
+[0.14880145, 0.058422606, 0.12911263]
+loss not_inj: 
+0.0892957
+
+epoch 29 done
+loss inj: 
+[0.15156075, 0.058165878, 0.13342126]
+loss not_inj: 
+0.0842847
+
+epoch 30 done
+loss inj: 
+[0.15474108, 0.057867847, 0.13839033]
+loss not_inj: 
+0.0793587
+
+epoch 31 done
+loss inj: 
+[0.15732755, 0.057514645, 0.14258987]
+loss not_inj: 
+0.0744011
+
+epoch 32 done
+loss inj: 
+[0.15958628, 0.057101943, 0.14640619]
+loss not_inj: 
+0.0698599
+
+epoch 33 done
+loss inj: 
+[0.16180399, 0.056644157, 0.15022834]
+loss not_inj: 
+0.0657059
+
+epoch 34 done
+loss inj: 
+[0.16335483, 0.056203444, 0.1530734]
+loss not_inj: 
+0.0620656
+
+epoch 35 done
+loss inj: 
+[0.16467227, 0.055689286, 0.15568997]
+loss not_inj: 
+0.0582748
+
+epoch 36 done
+loss inj: 
+[0.16632104, 0.055100482, 0.15888652]
+loss not_inj: 
+0.0540381
+
+epoch 37 done
+loss inj: 
+[0.16747011, 0.054399919, 0.16152884]
+loss not_inj: 
+0.049561
+
+epoch 38 done
+loss inj: 
+[0.16828543, 0.053622, 0.1638049]
+loss not_inj: 
+0.0449133
+
+epoch 39 done
+loss inj: 
+[0.16859847, 0.052819066, 0.16539916]
+loss not_inj: 
+0.0402105
+
+epoch 40 done
+loss inj: 
+[0.1682916, 0.051988833, 0.1661468]
+loss not_inj: 
+0.0353175
+
+epoch 41 done
+loss inj: 
+[0.16531931, 0.051027779, 0.16327362]
+loss not_inj: 
+0.0300834
+
+epoch 42 done
+loss inj: 
+[0.16247031, 0.049851421, 0.16088413]
+loss not_inj: 
+0.0257327
+
+epoch 43 done
+loss inj: 
+[0.15908104, 0.048795961, 0.15755011]
+loss not_inj: 
+0.0229787
+
+epoch 44 done
+loss inj: 
+[0.15837228, 0.047944449, 0.15775406]
+loss not_inj: 
+0.020318
+
+epoch 45 done
+loss inj: 
+[0.15618971, 0.04701807, 0.15595949]
+loss not_inj: 
+0.0180341
+
+epoch 46 done
+loss inj: 
+[0.1530416, 0.045946576, 0.15299289]
+loss not_inj: 
+0.0161705
+
+epoch 47 done
+loss inj: 
+[0.14894116, 0.044882897, 0.14865467]
+loss not_inj: 
+0.014162
+
+epoch 48 done
+loss inj: 
+[0.14511693, 0.043836579, 0.14468621]
+loss not_inj: 
+0.0119116
+
+epoch 49 done
+loss inj: 
+[0.14159347, 0.042734187, 0.14122754]
+loss not_inj: 
+0.00952283
+
+epoch 50 done
+loss inj: 
+[0.13866276, 0.041663986, 0.13856967]
+loss not_inj: 
+0.0073847
+
+epoch 51 done
+loss inj: 
+[0.1357317, 0.040651314, 0.13582912]
+loss not_inj: 
+0.00559529
+
+epoch 52 done
+loss inj: 
+[0.13275713, 0.039762385, 0.13284963]
+loss not_inj: 
+0.00409569
+
+epoch 53 done
+loss inj: 
+[0.12837836, 0.038912673, 0.12780814]
+loss not_inj: 
+0.00292224
+
+epoch 54 done
+loss inj: 
+[0.12411691, 0.038144492, 0.12281774]
+loss not_inj: 
+0.00211255
+
+epoch 55 done
+loss inj: 
+[0.11950964, 0.03746913, 0.11720072]
+loss not_inj: 
+0.00152927
+
+epoch 56 done
+loss inj: 
+[0.11444747, 0.036869712, 0.11082537]
+loss not_inj: 
+0.00108754
+
+epoch 57 done
+loss inj: 
+[0.10863885, 0.036155149, 0.10354815]
+loss not_inj: 
+0.000704062
+
+epoch 58 done
+loss inj: 
+[0.1029537, 0.03560432, 0.0962134]
+loss not_inj: 
+0.000531557
+
+epoch 59 done
+loss inj: 
+[0.097328469, 0.035143159, 0.088836163]
+loss not_inj: 
+0.000429945
+
