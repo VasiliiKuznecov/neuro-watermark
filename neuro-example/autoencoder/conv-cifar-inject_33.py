@@ -100,16 +100,16 @@ injection.summary()
 not_injection.summary()
 
 
-plot_model(injector, to_file='imgs/models/autoencoder/cifar_injector31.png', show_shapes=True)
-plot_model(deinjector, to_file='imgs/models/autoencoder/cifar_not_injector31.png', show_shapes=True)
-plot_model(injection, to_file='imgs/models/autoencoder/cifar_injection31.png', show_shapes=True)
-plot_model(not_injection, to_file='imgs/models/autoencoder/cifar_not_injection31.png', show_shapes=True)
+plot_model(injector, to_file='imgs/models/autoencoder/cifar_injector33.png', show_shapes=True)
+plot_model(deinjector, to_file='imgs/models/autoencoder/cifar_not_injector33.png', show_shapes=True)
+plot_model(injection, to_file='imgs/models/autoencoder/cifar_injection33.png', show_shapes=True)
+plot_model(not_injection, to_file='imgs/models/autoencoder/cifar_not_injection33.png', show_shapes=True)
 
 epoch_number = 4 * 60
 batches_number = 1000
 batch_size = 50
 
-f1=open('neuro-example/autoencoder/cifar-31/stats.txt', 'ab', 0)
+f1=open('neuro-example/autoencoder/cifar-33/stats.txt', 'a', 1)
 
 for e in range(epoch_number):
     start_time = time.time()
@@ -142,9 +142,9 @@ for e in range(epoch_number):
     f1.write('\n')
     f1.write('\n')
 
-    injector.save('neuro-example/autoencoder/cifar-31/cifar_injector31-' + str(e) + '.h5')
-    deinjector.save('neuro-example/autoencoder/cifar-31/cifar_deinjector31-' + str(e) + '.h5')
-    injection.save('neuro-example/autoencoder/cifar-31/cifar_injection31-' + str(e) + '.h5')
-    not_injection.save('neuro-example/autoencoder/cifar-31/cifar_not_injection31-' + str(e) + '.h5')
+    injector.save('neuro-example/autoencoder/cifar-33/cifar_injector33-' + str(e) + '.h5')
+    deinjector.save('neuro-example/autoencoder/cifar-33/cifar_deinjector33-' + str(e) + '.h5')
+    injection.save('neuro-example/autoencoder/cifar-33/cifar_injection33-' + str(e) + '.h5')
+    not_injection.save('neuro-example/autoencoder/cifar-33/cifar_not_injection33-' + str(e) + '.h5')
 
 f1.close()
